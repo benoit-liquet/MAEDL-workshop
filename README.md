@@ -129,7 +129,8 @@ We use google collab to share code:
    
 - Part 3: Sequence Models
     
-    - [Sequence Models: tutorial 1](https://colab.research.google.com/drive/1wWjPT8yBuuofvwKJgl8bIlhMsWV9Z0dk?usp=sharing)
-    
-    - [Sequence Models: tutorial 2](https://colab.research.google.com/drive/1R_T_klRPjp0x2k715zVcxGbXBPbGz9cx?usp=sharing)
+    - [Sequence Models: Practice 1](https://colab.research.google.com/drive/1VMNmL1YKZHZBJip8f5tcEMxj5VlCIfbM#scrollTo=sB1y93Nmik5T)
+    - [Sequence Models: Practice 2](https://colab.research.google.com/drive/1MnvITjntB9AmHL2BN_03hGQcDxNVom4B#scrollTo=TvEZtC85n1--)
+    - [Sequence Models: Practice 3](https://colab.research.google.com/drive/10HN5da584vuDld6Go9QceNIyGRfrsKCg#)
+
 
