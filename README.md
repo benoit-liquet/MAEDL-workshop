@@ -124,7 +124,8 @@ We use google collab to share code:
 - Part 2: Convolutional Neural Networks
 
     - [Convolutional Neural Networks: Practice 1](https://colab.research.google.com/drive/1dtH3UHSfbK5Ss9E9ogtYG5YQzc5fTXNE#scrollTo=klnJ1uktsIVl)
-    - [Convolutional Neural Networks: Tutorial 2](https://colab.research.google.com/drive/1qgL6EU24i1ERR2I0qpETqnIGw1fKC7-K?usp=sharing)
+    - [Convolutional Neural Networks: Practice 2](https://colab.research.google.com/drive/1NysOFe1nSgLXZ7EHYqwoy9JvkZZiIPXd#scrollTo=Jq70jQzm08cK)
+    - [Convolutional Neural Networks: Practice 3](https://colab.research.google.com/drive/1Foo-KTWMiJV-sl0mRaZnWHnk05VQLyUB)
    
 - Part 3: Sequence Models
     
