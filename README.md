@@ -118,8 +118,7 @@ We use google collab to share code:
 - Part 1: Deep Neural network
 
     - [Deep Neural network: Tutorial 1](https://colab.research.google.com/drive/1Qn88dyZXHhwqoLnGcNaHq510eDEjxau7?usp=sharing)
-          
-    - [Deep Neural network: Tutorial 2](https://colab.research.google.com/drive/1Msg2GDt5P0kB0MVPSPUcGZGIxDjOgoDb?usp=sharing)
+    - [Deep Neural network: Practice 2](https://colab.research.google.com/drive/1Msg2GDt5P0kB0MVPSPUcGZGIxDjOgoDb?usp=sharing)
 
 - Part 2: Convolutional Neural Networks
 
