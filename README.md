@@ -116,9 +116,10 @@ We use google collab to share code:
 ## Note book used during the workshop DAY 3 and 4
 
 - Part 1: Deep Neural network
-
-    - [Deep Neural network: Tutorial 1](https://colab.research.google.com/drive/1Qn88dyZXHhwqoLnGcNaHq510eDEjxau7?usp=sharing)
-    - [Deep Neural network: Practice 2](https://colab.research.google.com/drive/1Msg2GDt5P0kB0MVPSPUcGZGIxDjOgoDb?usp=sharing)
+    - [Deep Neural network: Practice 1](https://colab.research.google.com/drive/1GDdmVTk_Y_SUKvDrVWPf8CKj-M6r0NyG#scrollTo=OLuuc9QrSxFn)
+    - [Deep Neural network: Practice 2](https://colab.research.google.com/drive/1gpr8Xl5Y51-dYDQ1BA6lNcJ8yZq3GPvr)
+    - [Deep Neural network: Practice 3](https://colab.research.google.com/drive/12PETdpB2B0Y2mTGzYUQ8X6M0GxRo4cQN#scrollTo=kNmB-JWBaX59)
+    - [Deep Neural network: Practice 4](https://colab.research.google.com/drive/1Msg2GDt5P0kB0MVPSPUcGZGIxDjOgoDb?usp=sharing)
 
 - Part 2: Convolutional Neural Networks
 
