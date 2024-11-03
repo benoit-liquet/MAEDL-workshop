@@ -5,10 +5,11 @@
 - 5-day workshop [course](https://ami.gov.vn/2024iccais_course/)
 - Workshop based on Chapt 2,3,4,5, 6 and 7 of [Mathematical Engineering of Deep Learning](https://deeplearningmath.org)
 
-# COURSE OUTLINE 
 
-## 22-23 November **A CRASH COURSE ON USING MACHINE LEARNING METHODS EFFECTIVELY IN PRACTICE**
 
+# 22-23 November: A CRASH COURSE ON USING MACHINE LEARNING METHODS EFFECTIVELY IN PRACTICE
+
+## COURSE OUTLINE 
 - An overview of the basic problems of machine learning (ML)
 - Supervised, unsupervised learning
 - Classification/regression techniques
@@ -22,8 +23,9 @@
 - PCA and SVD
 - Introduction to non-linear auto-encoder architecture
 
-## 24-25 November **MATHEMATICAL ENGINEERING OF DEEP LEARNING - FOUNDATIONS**
-  
+# 24-25 November: MATHEMATICAL ENGINEERING OF DEEP LEARNING - FOUNDATIONS
+
+## COURSE OUTLINE   
 - The General Fully Connected Architecture
 - The Expressive Power of Neural Networks
 - Activation Function Alternatives
@@ -41,17 +43,16 @@
 - Transformers Model
 
 
-
 # Material 
 
 - The easy way to get the material is to download the zip file of this archive
 
-- Note book used during the workshop DAY 1 and 2 
+- Note book used during the workshop **DAY 1 and 2** 
     - Part 1: [supervised learning](/Machine_learning_PART1.nb.html.zip)
     - Part 2: [unsupervised learning](/Machine_learning_Part2.nb.html.zip)
 
 
-- Note book used during the workshop DAY 3 and 4
+- Note book used during the workshop **DAY 3 and 4**
     - Part 1: [Deep Neural Network](/Deep_learning_DNN_IASC.nb.html.zip)
     - Part 2: [Convolutional Neural Networks](/Deep_learning_CNN_IASC.nb.html.zip)
     - Part 3: [Sequence Models](/Deep_learning_RNN_IASC.nb.html.zip)
