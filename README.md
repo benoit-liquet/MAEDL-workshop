@@ -5,9 +5,10 @@
 - 5-day workshop [course](https://ami.gov.vn/2024iccais_course/)
 - Workshop based on Chapt 2,3,4,5, 6 and 7 of [Mathematical Engineering of Deep Learning](https://deeplearningmath.org)
 
+---
 
 
-## 22-23 November: A CRASH COURSE ON USING MACHINE LEARNING METHODS EFFECTIVELY IN PRACTICE
+## 22-23 November: [A CRASH COURSE ON USING MACHINE LEARNING METHODS EFFECTIVELY IN PRACTICE](/MachineLearning)
 
 
 ## 24-25 November: [MATHEMATICAL ENGINEERING OF DEEP LEARNING - FOUNDATIONS](/DeepLearning)
