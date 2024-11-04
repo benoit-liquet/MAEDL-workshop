@@ -7,45 +7,17 @@
 
 
 
-# 22-23 November: A CRASH COURSE ON USING MACHINE LEARNING METHODS EFFECTIVELY IN PRACTICE
+## 22-23 November: A CRASH COURSE ON USING MACHINE LEARNING METHODS EFFECTIVELY IN PRACTICE
 
-## COURSE OUTLINE 
-- An overview of the basic problems of machine learning (ML)
-- Supervised, unsupervised learning
-- Classification/regression techniques
-- A demonstration of basic classifiers. Performance measures such as accuracy, recall, and precision, F1-score.
-- Differences between ML approaches and statistics approaches to problem solving.
-- Train, Dev/Validate, Test/Production sets, K-fold cross validation.
-- Hyper-Parameters.
-- Bias-variance tradeoff.
-- Taste of unsupervised learning
-- K-means, image segmentation
-- PCA and SVD
-- Introduction to non-linear auto-encoder architecture
 
-# 24-25 November: MATHEMATICAL ENGINEERING OF DEEP LEARNING - FOUNDATIONS
-
-## COURSE OUTLINE   
-- The General Fully Connected Architecture
-- The Expressive Power of Neural Networks
-- Activation Function Alternatives
-- The Back Propagation Algorithm
-- Weight Initilization and Batch Normalization
-- Mitigating Overfitting with Dropout and Regularization
-- Overview of Convolutional Neural Networks
-- The Convolution Operation
-- Building a Convolutional Layer/ Building a Convolutional Neural
-- Inception, Resets, and Other Landmark Architectures
-- Recurrent Neural network
-- Long Short Term Memory Models
-- Gated Recurrent Unit Models
-- Encoder-decoder for End to End Translation
-- Transformers Model
+## 24-25 November: [MATHEMATICAL ENGINEERING OF DEEP LEARNING - FOUNDATIONS](/DL)
 
 
 # Material 
 
 - The easy way to get the material is to download the zip file of this archive
+
+
 
 - Note book used during the workshop **DAY 1 and 2** 
     - Part 1: [supervised learning](/Machine_learning_PART1.nb.html.zip)
