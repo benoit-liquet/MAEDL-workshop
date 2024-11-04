@@ -18,6 +18,15 @@
 - Transformers Model
 
 
+
+## Lecture notes
+
+- Part 1: [Deep Neural network](Deep_learning_DNN_Vietnam.nb.html.zip)
+
+- Part 2: [Convolutional Neural Networks](Deep_learning_CNNN_Vietnam.nb.html.zip)
+
+- Part 3: [Sequence Models](Deep_learning_RNNN_Vietnam.nb.html.zip)
+
 # R user 
 
 Please make sure that you have  recent R and RStudio installed.
