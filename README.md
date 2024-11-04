@@ -18,18 +18,17 @@
 
 - The easy way to get the material is to download the zip file of this archive
 
+ ## Lecture notes **DAY 1 and 2**
 
+- Part 1: [supervised learning](/MachineLearning/Machine_learning_PART1.nb.html.zip)
+- Part 2: [unsupervised learning](/MachineLearning//Machine_learning_Part2.nb.html.zip)
 
-- Note book used during the workshop **DAY 1 and 2** 
-    - Part 1: [supervised learning](/Machine_learning_PART1.nb.html.zip)
-    - Part 2: [unsupervised learning](/Machine_learning_Part2.nb.html.zip)
+ ## Lecture notes **DAY 3 and 4**
 
+- Part 1: [Deep Neural network](/DeepLearning/Deep_learning_DNN_Vietnam.nb.html.zip)
+- Part 2: [Convolutional Neural Networks](/DeepLearning/Deep_learning_CNNN_Vietnam.nb.html.zip)
+- Part 3: [Sequence Models](/DeepLearning/Deep_learning_RNNN_Vietnam.nb.html.zip)
 
-- Note book used during the workshop **DAY 3 and 4**
-    - Part 1: [Deep Neural Network](/Deep_learning_DNN_IASC.nb.html.zip)
-    - Part 2: [Convolutional Neural Networks](/Deep_learning_CNN_IASC.nb.html.zip)
-    - Part 3: [Sequence Models](/Deep_learning_RNN_IASC.nb.html.zip)
- 
 
 # R user 
 
@@ -77,13 +76,11 @@ install.packages("ggbubr")
 - ``Breast_cancer.RData``
 
 
-
 # Python user
 
 We use google collab to share code:
 
 ## Note book used during the workshop DAY 1 and 2
-
 
 
 ## Note book used during the workshop DAY 3 and 4
