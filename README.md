@@ -82,6 +82,9 @@ We use google collab to share code:
 
 ## Note book used during the workshop DAY 1 and 2
 
+-  [Supervised learning Practice](https://colab.research.google.com/drive/1UgQSb3lGnxsTf1WBzH8jxusZs5rema88?usp=sharing)
+-  [Lasso model](https://colab.research.google.com/drive/1QRTvbggQ8DfujIfwnuQNT6Gzd_o7X8jU?usp=sharing)
+-  [Unsupervised learning Practice](https://colab.research.google.com/drive/1AcaLjqUGbXsKuv0L9BlyWr_XZTuVh3Wi?usp=sharing#scrollTo=AxYFCVuEMfJC) (via google collab)
 
 ## Note book used during the workshop DAY 3 and 4
 
