@@ -1,0 +1,250 @@
+---
+title: "Solution PCA prediction on Breast cancer dataset"
+author: Benoit Liquet
+header-includes:
+- \usepackage{color}
+- \usepackage{tcolorbox}
+---
+
+
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,message = NA,comment = NA,eval=TRUE)
+library(knitr)
+```
+
+
+
+# Prediction using PCA
+
+In this question we will use the dataset \texttt{Breast\_cancer.RData} which contains quantitative information from digitized images of a diagnostic test (fine needle aspirate (FNA) test on breast mass) for the diagnosis of breast cancer. The variables describe characteristics of the cell nuclei present in the image. The mean, standard error and ``worst'' or largest (mean of the three largest values) of these features were computed for each image, resulting in 30 features. For instance, field 3 is Mean Radius, field 13 is Radius SE, field 23 is Worst Radius.
+
+```{r}
+load("../Breast_cancer.RData")
+```
+
+- 80/20 split data
+
+```{r}
+# Set a seed for reproducibility
+set.seed(40)
+
+# Determine the number of rows in the dataset
+n <- nrow(Breast_cancer_data)
+
+# Create a random sample of indices for the training set (80% of the data)
+train_indices <- sample(1:n, size = 0.8 * n)
+
+# Create training and testing sets
+train_data <- Breast_cancer_data[train_indices, ]
+test_data <- Breast_cancer_data[-train_indices, ]
+```
+
+
+
+```{r}
+Breast.var_train <- train_data[,-c(1,2)]
+```
+
+
+
+### PCA with scaled variables
+
+```{r}
+# Perform PCA with scaled variables
+pca <- prcomp(Breast.var_train, scale = TRUE)
+```
+
+The plot representing the variance explained by the components is called Scree Plot.
+
+```{r}
+library(factoextra)
+summary(pca) #variance explained
+```
+
+```{r}
+fviz_eig(pca)
+```
+
+The first 2 components explain approximately 80% of the total variation and 3 components, almost 90%. The number of components that one wants to retain is problem specific and it is a trade-off between information and low-dimensionality.
+
+
+
+- using the \texttt{eigen()} function that computes eigenvectors and eigenvalues for a matrix.
+
+```{r}
+#first scale the data
+data.scaled <- apply(Breast.var_train, 2, scale) #apply scale to columns
+#get the covariance matrix
+cov.X <- cov(data.scaled)
+
+#Get the eigenvalues and eigenvectors 
+#of the covariance matrix
+ev<- eigen(cov.X)
+
+#The sqrt of the eigenvalues are the std
+#deviations of the compontents 
+sqrt(ev$values)  #equal to pca$sdev
+pca$sdev[1:5]
+#And the eigenvectors are the principal components.
+ev$vector[,1:5] #equal to pca$rotation (up to the sign)
+```
+
+- We can also use the SVD of the scaled data to get the same results
+
+```{r}
+svd.X <- svd(data.scaled)
+svd.X$v[,1:2] # the two first components loading equal to ev$vector[,1:2]
+svd.X$d # equal to sqrt((n-1)*ev$values)
+n <- dim(data.scaled)[1]
+sqrt((n-1)*ev$values)
+```
+-  We can visualize the samples on the first two components
+
+```{r}
+groups  <-  train_data$diagnosis
+
+fviz_pca_ind(pca,
+             col.ind = groups, # color by groups
+             palette = c("#00AFBB",  "#FC4E07", "blue", "red"),
+             addEllipses = TRUE, # Concentration ellipses
+             ellipse.type = "confidence",
+             legend.title = "Groups",
+             repel = FALSE,
+             label="none",
+             axes=c(1,2)
+             )
+```
+
+- We now use some of the principal components as predictors in a logistic model for the variable diagnosis. A popular package for machine learning model is \texttt{caret}
+
+```{r,message=FALSE,warning=FALSE}
+library(caret)
+trctrl <- trainControl(method = "repeatedcv", 
+                       number = 10,
+                       preProcOptions =list(pcaComp = 3),  
+                       classProbs = TRUE,  
+                       summaryFunction = twoClassSummary)
+
+breast.glm <- caret::train(diagnosis ~ .,
+                   data = train_data[,-1],
+                   method = "glm",
+                   family=binomial,
+                   trControl = trctrl,
+                   preProcess=c("center", "scale", "pca"), #uses PCA
+                   metric="ROC")
+
+breast.glm
+
+```
+The prediction accuracy is excellent with three components. We can get the coefficients for these components but they do not have an obvious interpretation.
+
+```{r}
+summary(breast.glm)
+```
+
+We check this result using glm function:
+
+```{r}
+data.glm <- data.frame(train_data$diagnosis,pca$x[,1:3])
+colnames(data.glm) <- c("diagnosis","PC1","PC2","PC3")
+
+data.glm$diagnosis <- factor(data.glm$diagnosis)
+model.glm <- glm(diagnosis ~ PC1+PC2+PC3,family=binomial(),data=data.glm)
+summary(model.glm)
+```
+
+- Project the test data on the lower dimensional space (i.e, using some PCs)
+
+```{r}
+# Select the same features from the test data (excluding the first two columns)
+Breast.var_test <- test_data[,-c(1,2)]
+# Apply PCA to the test data using the same PCA model.
+pca_test <- predict(pca, newdata = Breast.var_test)
+pca_test <- pca_test[,1:3]
+colnames(pca_test)[1:3] <- c("PC1","PC2","PC3")
+newdatatest <- data.frame(pca_test)
+dim(newdatatest)
+```
+
+
+```{r}
+# Predict probabilities using the GLM model
+predicted_probs <- predict(model.glm, newdata = newdatatest, type = "response")
+length(predicted_probs)  # Should return 114
+```
+
+- Convert probabilities to binary predictions
+
+```{r}
+predicted_classes <- ifelse(predicted_probs > 0.5, "M", "B")  
+```
+
+- Create the confusion matrix
+
+```{r}
+confusion_matrix <- table(Predicted = predicted_classes, Actual = test_data$diagnosis)
+# Print the confusion matrix
+print(confusion_matrix)
+```
+- We will plot the ROC curve and compute the AUC metric
+
+```{r,eval=TRUE}
+library(ROCit)
+library(ROCR)
+pr_full = prediction(predicted_probs, test_data$diagnosis)
+perf_full = performance(pr_full, measure = "tpr", x.measure = "fpr")
+
+auc1 = performance(pr_full, measure = "auc")
+auc1 = auc1@y.values[[1]]
+
+print(paste("AUC full test", signif(auc1,digits=4)))
+
+r3=rocit(predicted_probs, test_data$diagnosis, method = "bin")
+plot(r3$TPR~r3$FPR, type = "l", xlab = "False Positive Rate", lwd = 2,
+     ylab = "Sensitivity", col= "gold4",cex.lab=2,cex.axis = 2)
+grid()
+
+```
+
+
+- Let compare with a model using only the first PC
+
+```{r}
+model.glm.1pc <- glm(diagnosis ~ PC1,family=binomial(),data=data.glm)
+#summary(model.glm.1pc)
+```
+
+
+```{r}
+# Predict probabilities using the GLM model
+predicted_probs.1pc <- predict(model.glm.1pc, newdata = newdatatest, type = "response")
+predicted_classes.1pc <- ifelse(predicted_probs.1pc > 0.5, "M", "B")  
+confusion_matrix.1pc <- table(Predicted = predicted_classes.1pc, Actual = test_data$diagnosis)
+# Print the confusion matrix
+print(confusion_matrix.1pc)
+```
+
+- ROC curve
+
+```{r,eval=TRUE}
+library(ROCit)
+pr_full.1pc = prediction(predicted_probs.1pc, test_data$diagnosis)
+perf_full.1pc = performance(pr_full.1pc, measure = "tpr", x.measure = "fpr")
+
+auc1pc = performance(pr_full.1pc, measure = "auc")
+auc1pc = auc1pc@y.values[[1]]
+
+print(paste("AUC 1 PC", signif(auc1pc,digits=4)))
+
+r1=rocit(predicted_probs.1pc, test_data$diagnosis, method = "bin")
+plot(r3$TPR~r3$FPR, type = "l", xlab = "False Positive Rate", lwd = 2,
+     ylab = "Sensitivity", col= "gold4",cex.lab=2,cex.axis = 2)
+lines(r1$TPR~r1$FPR, lwd = 2, col = "orange")
+legend("bottomright", c("3 PC", "1 PC"), cex=2,
+       lwd = 2, col = c("gold4",
+                        "orange"), bty = "n")
+
+```
