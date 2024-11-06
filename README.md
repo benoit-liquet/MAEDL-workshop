@@ -3,7 +3,7 @@
 
 - Event organized by [ICCAIS 2024](https://ami.gov.vn/2024iccais)
 - 5-day workshop [course](https://ami.gov.vn/2024iccais_course/)
-- Workshop based on Chapt 2,3,4,5, 6 and 7 of [Mathematical Engineering of Deep Learning](https://deeplearningmath.org)
+- Workshop based on Chapt 1,2,3,4,5, 6 and 7 of [Mathematical Engineering of Deep Learning](https://deeplearningmath.org)
 
 ---
 
