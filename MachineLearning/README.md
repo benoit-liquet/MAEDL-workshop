@@ -31,6 +31,15 @@ Please make sure that you have  recent R and RStudio installed.
   - R : https://cran.r-project.org/
   - RStudio : https://www.rstudio.com/products/rstudio/download/preview/
 
+# Practice and Illustration in Machine Learning
+
+### R code used during the workshop 
+
+- The R code used for supervised learning is [Rcode_supervised_learning.R](Rcode_supervised_learning.R)
+- The R code used for unsupervised learning is [Rcode_unsupervised_learning.R](Rcode_unsupervised_learning.R)
+- The R code used for the book [Mathematical Engineering of Deep Learning](https://deeplearningmath.org/) is available on [GitHub repo](https://github.com/yoninazarathy/MathematicalEngineeringDeepLearning)
+
+
 
 ## Python Note book used during the workshop 
 
