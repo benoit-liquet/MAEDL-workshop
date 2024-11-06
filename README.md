@@ -20,8 +20,8 @@
 
  ## Lecture notes **DAY 1 and 2**
 
-- Part 1: [Supervised Learning](Machine_learning_Supervised_vietnam.nb.html.zip)
-- Part 2: [Unsupervised Learning](Machine_learning_unsupervised_vietnam.nb.html.zip)
+- Part 1: [Supervised Learning](MachineLearning/Machine_learning_Supervised_vietnam.nb.html.zip)
+- Part 2: [Unsupervised Learning](MachineLearning/Machine_learning_unsupervised_vietnam.nb.html.zip)
 
 
  ## Lecture notes **DAY 3 and 4**
