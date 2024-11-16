@@ -48,6 +48,10 @@ Please make sure that you have  recent R and RStudio installed.
 
 -  [Unsupervised learning Practice](https://colab.research.google.com/drive/1AcaLjqUGbXsKuv0L9BlyWr_XZTuVh3Wi?usp=sharing#scrollTo=AxYFCVuEMfJC) (via google collab)
 
+- [denoising auto-encoder example in Python](https://colab.research.google.com/drive/1L-LhBFB2mOE27P-qiw1jXep3As-b_NMY#scrollTo=YAmr5CcPDz0J)
+
+- [PCA and auto-encoder for Anomaly Detection](https://colab.research.google.com/drive/1DeDeqVp4xX5Dv9nRrmsRKMTLPHpfzQcg#scrollTo=e9rDcKTd02LN)
+
 # Challenge Tutorial: Supervised learning
 
 - [Challenge Tutorial: Supervised learning](https://github.com/benoit-liquet/MAEDL/blob/main/MachineLearning/Challenge_tutorial_supervised_learning.pdf)
