@@ -48,3 +48,6 @@ Please make sure that you have  recent R and RStudio installed.
 
 -  [Unsupervised learning Practice](https://colab.research.google.com/drive/1AcaLjqUGbXsKuv0L9BlyWr_XZTuVh3Wi?usp=sharing#scrollTo=AxYFCVuEMfJC) (via google collab)
 
+# Challenge Tutorial: Supervised learning
+
+- [Challenge Tutorial: Supervised learning]()
