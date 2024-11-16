@@ -50,4 +50,4 @@ Please make sure that you have  recent R and RStudio installed.
 
 # Challenge Tutorial: Supervised learning
 
-- [Challenge Tutorial: Supervised learning]()
+- [Challenge Tutorial: Supervised learning](https://github.com/benoit-liquet/MAEDL/blob/main/MachineLearning/Challenge_tutorial_supervised_learning.pdf)
