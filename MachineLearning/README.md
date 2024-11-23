@@ -52,6 +52,8 @@ Please make sure that you have  recent R and RStudio installed.
 
 - [PCA and auto-encoder for Anomaly Detection](https://colab.research.google.com/drive/1DeDeqVp4xX5Dv9nRrmsRKMTLPHpfzQcg#scrollTo=e9rDcKTd02LN)
 
+- [solution ecological tutorial](https://colab.research.google.com/drive/14wX8qULPxyD4f1I3DCWBDK9Fu-CsngXC?usp=sharing)
+
 # Challenge Tutorial: Supervised learning
 
 - [Challenge Tutorial: Supervised learning](https://github.com/benoit-liquet/MAEDL/blob/main/MachineLearning/Challenge_tutorial_supervised_learning.pdf)
