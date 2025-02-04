@@ -1,30 +1,30 @@
 # MACHINE LEARNING AND DEEP LEARNING
 
 
-- Event organized by [ICCAIS 2024](https://ami.gov.vn/2024iccais)
-- 5-day workshop [course](https://ami.gov.vn/2024iccais_course/)
+- Event organized by [Centre for Data Science at QUT](https://www.qut.edu.au/research/centre-for-data-science)
+- 2-day workshop [course]
 - Workshop based on Chapt 1,2,3,4,5, 6 and 7 of [Mathematical Engineering of Deep Learning](https://deeplearningmath.org)
 
 ---
 
 
-## 22-23 November: [A CRASH COURSE ON USING MACHINE LEARNING METHODS EFFECTIVELY IN PRACTICE](/MachineLearning)
+## 20 February: [A CRASH COURSE ON USING MACHINE LEARNING METHODS EFFECTIVELY IN PRACTICE](/MachineLearning)
 
 
-## 24-25 November: [MATHEMATICAL ENGINEERING OF DEEP LEARNING - FOUNDATIONS](/DeepLearning)
+## 21 February: [MATHEMATICAL ENGINEERING OF DEEP LEARNING - FOUNDATIONS](/DeepLearning)
 
 
 # Material 
 
 - The easy way to get the material is to download the zip file of this archive
 
- ## Lecture notes **DAY 1 and 2**
+ ## Lecture notes **DAY 1**
 
 - Part 1: [Supervised Learning](MachineLearning/Machine_learning_Supervised_vietnam.nb.html.zip)
 - Part 2: [Unsupervised Learning](MachineLearning/Machine_learning_unsupervised_vietnam.nb.html.zip)
 
 
- ## Lecture notes **DAY 3 and 4**
+ ## Lecture notes **DAY 2**
 
 - Part 1: [Deep Neural network](/DeepLearning/Deep_learning_DNN_Vietnam.nb.html.zip)
 - Part 2: [Convolutional Neural Networks](/DeepLearning/Deep_learning_CNNN_Vietnam.nb.html.zip)
