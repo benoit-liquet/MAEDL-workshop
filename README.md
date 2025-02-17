@@ -10,8 +10,19 @@
 
 ## 20 February: [A CRASH COURSE ON USING MACHINE LEARNING METHODS EFFECTIVELY IN PRACTICE](/MachineLearning)
 
+- 10 am to 12pm Session 1: Supevised learning
+- 12pm to 12.30pm Lunch
+- 12.30pm to 2.30pm Session 2: Supevised learning
+- 2.30pm to 2.45 pm tea Break
+- 2.45pm  to 4pm Session 3: Unsupevised learning
 
 ## 21 February: [MATHEMATICAL ENGINEERING OF DEEP LEARNING - FOUNDATIONS](/DeepLearning)
+
+- 10 am to 12pm Session 1: Fully Connected Neural Network
+- 12pm to 12.30pm Lunch
+- 12.30pm to 2.30pm Session 2: Convolution Neural Network
+- 2.30pm to 2.45 pm tea Break
+- 2.45pm  to 4pm Session 3: Sequence Model
 
 
 # Material 
